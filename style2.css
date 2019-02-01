@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+    font-family: 'Italianno', cursive;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  top: -7px;
+  background-color: whitesmoke;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+header .levo {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
+header .levo h4 a {
+  text-decoration: none;
+  color: red;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+header .levo h2 {
+  margin-left: 2.7%;
+  font-size: 30px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+header .desno {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 34%;
+}
+header .desno p a {
+  text-decoration: none;
+  color: white;
+  background: red;
+  padding: 4px 5px;
+  border: 1px solid red;
+  border-radius: 4px;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+header .desno p a:hover {
+  background: white;
+  color: red;
+}
+.pozadina {
+  background-image: url("https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  height: 340px;
+}
+.pozadina h1 {
+  color: black;
+ padding-top: 12%;
+  text-align: center;
+  font-size: 46px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+main {
+  margin: 38px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+article {
+  padding: 3% 5%;
+  border: 1px solid red;
+  width: 36%;
+}
+article h1 {
+  letter-spacing: 0.02em;
+  font-size: 34px;
+  font-weight: 500;
+}
+article p {
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  font-size: 22px;
+  font-weight: 600;
+}
+article ul li {
+  line-height: 1.4em;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.sl {
+  width: 300px;
+  height: 280px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer p {
+  font-size: 24px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}
+@media (max-width: 1150px){
+  .recept1, .recept2, .recept3, .recept4 {
+    height: 1100px;
+  }
+}
+@media (max-width: 900px){
+   header {
+    flex-direction: column-reverse;
+     justify-content: center;
+     align-items: center;
+     position: static;
+     padding-left: 0;
+     padding-right: 0;
+  }
+  header .levo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 56%;
+  }
+  header .levo h2 {
+    font-size: 22px;
+  }
+  header .desno {
+    justify-content: center;
+    width: 30%;
+  }
+  main {
+    flex-direction: column;
+  }
+  article {
+    width: 86%;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    border-left: 0;
+    border-right: 0;
+  }
+   .recept1, .recept2, .recept3, .recept4 {
+    height: auto;
+  }
+}
