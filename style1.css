@@ -80,7 +80,7 @@ article {
   border: 1px solid red;
   width: 36%;
 }
-article h1 {
+article h2 {
   letter-spacing: 0.02em;
   font-size: 34px;
   font-weight: 500;
@@ -106,8 +106,10 @@ article ul li {
 }
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 footer p {
   font-size: 24px;
